@@ -4,6 +4,7 @@ public static class BrokerEndpoints
 {
     public static void Map(WebApplication app)
     {
-        app.MapGet("/broker", () => "Hello World");
+        app.MapPost("/send", () => "Hello World");
+        app.MapGet("/receive", () => "Hello World");
     }
 }
