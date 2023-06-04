@@ -1,9 +1,11 @@
-﻿using SecureChat.ChatServer.Lib.Interface;
+﻿namespace SecureChat.ChatServer.Lib.Domain;
 
-namespace SecureChat.ChatServer.Lib.Domain;
-
-public partial class Message : BaseEntity<Message>, IBaseEntity
+public partial class Message : BaseEntity<Message>
 {
+    public Message()
+    {
+        Init(this);
+    }
     public override bool CreateNew(Message t)
     {
         throw new NotImplementedException();

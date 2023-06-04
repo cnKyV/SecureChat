@@ -1,17 +1,17 @@
 ﻿namespace SecureChat.ChatServer.Lib.Domain;
 
-public partial class Configuration : BaseEntity<Configuration>
+public partial class AuditLog : BaseEntity<AuditLog>
 {
-    public Configuration()
+    public AuditLog()
     {
         Init(this);
     }
-    public override bool CreateNew(Configuration t)
+    public override bool CreateNew(AuditLog t)
     {
         throw new NotImplementedException();
     }
 
-    public override bool Update(Guid id, Configuration t)
+    public override bool Update(Guid id, AuditLog t)
     {
         throw new NotImplementedException();
     }

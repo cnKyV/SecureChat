@@ -1,7 +1,6 @@
 ﻿namespace SecureChat.ChatServer.Lib.Domain;
 
-public partial class Message
+public partial class AuditLog
 {
     
-
 }
