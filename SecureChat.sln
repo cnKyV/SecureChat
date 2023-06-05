@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureChat.ChatServer", "Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureChat.ChatServer.Lib", "SecureChat.ChatServer.Lib\SecureChat.ChatServer.Lib.csproj", "{2B892CCA-DBAB-4066-A8AE-58B314195A52}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB48F27C-2009-4F47-9F5E-CF1056727A08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3A210919-ED5D-4E8C-8265-55B09A176EF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,9 @@ Global
 		{2B892CCA-DBAB-4066-A8AE-58B314195A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B892CCA-DBAB-4066-A8AE-58B314195A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B892CCA-DBAB-4066-A8AE-58B314195A52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{260978B7-D51D-4996-B62E-80D24D048820} = {CB48F27C-2009-4F47-9F5E-CF1056727A08}
+		{2B892CCA-DBAB-4066-A8AE-58B314195A52} = {CB48F27C-2009-4F47-9F5E-CF1056727A08}
 	EndGlobalSection
 EndGlobal

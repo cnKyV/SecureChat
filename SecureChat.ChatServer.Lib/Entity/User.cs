@@ -8,4 +8,5 @@ public partial class User
     public string Nickname { get; set; }
     public ICollection<User> FriendList { get; set; }
     public ICollection<Message> History { get; set; }
+    public ICollection<Configuration> Configurations { get; set; }
 }
