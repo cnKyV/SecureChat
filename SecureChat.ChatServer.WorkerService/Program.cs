@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using SecureChat.ChatServer.Controllers;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,13 +6,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromSeconds(30);
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
 
 var app = builder.Build();
 
@@ -26,10 +16,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseSession();
 app.UseHttpsRedirection();
+
 app.UseAuthorization();
+
 app.MapControllers();
 
-BrokerEndpoints.Map(app);
 app.Run();

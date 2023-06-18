@@ -1,6 +1,6 @@
 ﻿namespace SecureChat.ChatServer.Lib.Service;
 
-public class EmailService
+public class QueueService
 {
     
 }

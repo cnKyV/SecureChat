@@ -15,7 +15,6 @@ public abstract class BaseEntity<T> : IBaseEntity
             UpdatedBy = "SYSTEM";
         
         CreatedDateTime = DateTimeOffset.Now;
-        UpdatedDateTime = DateTimeOffset.Now;
     }
     
     public abstract bool CreateNew(T t);
