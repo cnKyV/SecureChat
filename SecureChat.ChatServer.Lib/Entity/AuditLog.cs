@@ -8,4 +8,5 @@ public partial class AuditLog
     public User User { get; set; }
     public string AuditMessage { get; set; }
     public AuditActionMessage AuditActionMessage { get; set; }
+    public DateTimeOffset AuditDate { get; set; }
 }
